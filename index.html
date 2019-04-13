@@ -135,6 +135,9 @@ BlocksOfGame[block] = lastMove;
 printState()
 }
 
+if (BlocksOfGame == lastMove) {
+return BlocksOfGame;
+}
 
 ctx.beginPath();
 ctx.moveTo(230, 0);

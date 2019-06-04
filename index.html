@@ -112,6 +112,12 @@ else
 y = 350
 
 
+if (BlocksOfGame[block] != '') {
+return;
+
+}
+	
+	
  if (lastMove == 'x') {
 lastMove = 'o';
 drawO(x, y, 50)
@@ -125,13 +131,6 @@ drawX(x, y);
 var block = calcBlockFromCoordinates(x, y);
 BlocksOfGame[block] = lastMove;
 printState()
-
-
-
-if (BlocksOfGame[block] != '') {
-return;
-
-}
 
 
 }

@@ -21,7 +21,6 @@ var ctx = canvas.getContext("2d");
 document.getElementById("canvas").addEventListener("click", function(event) {
   onClick(event);
 });
-var block = calcBlockFromCoordinates(x, y);
 var lastMove = 'x';
 var BlocksOfGame = ['', '', '', '', '', '', '', '', ''];
 function printState()
@@ -112,7 +111,7 @@ y = 580;
 else 
 y = 350
 
-
+var block = calcBlockFromCoordinates(x, y);
 if (BlocksOfGame[block] != '') {
 return;
 

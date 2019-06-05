@@ -126,7 +126,12 @@ ctx.stroke();
 }
 
 else if (BlocksOfGame[0] == 'o' && BlocksOfGame[1] == 'o' && BlocksOfGame[2] == 'o') {
-alert(' o win, congrats!');
+ctx.beginPath();
+ctx.moveTo(0, 115);
+ctx.lineTo(700, 115);
+ctx.lineWidth = 5;
+ctx.strokeStyle = 'red';
+ctx.stroke();
 }
 
 else if (BlocksOfGame[3] == 'x' && BlocksOfGame[4] == 'x' && BlocksOfGame[5] == 'x') {

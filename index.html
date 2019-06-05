@@ -23,20 +23,6 @@ document.getElementById("canvas").addEventListener("click", function(event) {
 });
 var lastMove = 'x';
 var BlocksOfGame = ['', '', '', '', '', '', '', '', ''];
-function printState()
-
-{
-	alert(
-	BlocksOfGame[0]+
-	BlocksOfGame[1]+
-	BlocksOfGame[2]+
-	BlocksOfGame[3]+
-	BlocksOfGame[4]+
-	BlocksOfGame[5]+
-	BlocksOfGame[6]+
-	BlocksOfGame[7]+
-	BlocksOfGame[8])
-}
 function calcBlockFromCoordinates(x, y) {
 if (x < 235 && y < 235){
 return 0;
@@ -129,7 +115,6 @@ drawX(x, y);
  
 
 BlocksOfGame[block] = lastMove;
-printState()
 
 if (BlocksOfGame[0] == 'x' && BlocksOfGame[1] == 'x' && BlocksOfGame[2] == 'x') {
 alert(' x win, congrats!');

@@ -116,7 +116,7 @@ drawX(x, y);
 
 BlocksOfGame[block] = lastMove;
 
-if (BlocksOfGame[0] == 'x' && BlocksOfGame[1] == 'x' && BlocksOfGame[2] == 'x') {
+if (BlocksOfGame[0] == BlocksOfGame[1] && BlocksOfGame[1] == BlocksOfGame[2]) {
 ctx.beginPath();
 ctx.moveTo(15, 115);
 ctx.lineTo(675, 115);
@@ -126,17 +126,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[0] == 'o' && BlocksOfGame[1] == 'o' && BlocksOfGame[2] == 'o') {
-ctx.beginPath();
-ctx.moveTo(15, 115);
-ctx.lineTo(675, 115);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[3] == 'x' && BlocksOfGame[4] == 'x' && BlocksOfGame[5] == 'x') {
+else if (BlocksOfGame[3] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[5]) {
 ctx.beginPath();
 ctx.moveTo(15, 350);
 ctx.lineTo(675, 350);
@@ -146,17 +137,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[3] == 'o' && BlocksOfGame[4] == 'o' && BlocksOfGame[5] == 'o') {
-ctx.beginPath();
-ctx.moveTo(15, 350);
-ctx.lineTo(675, 350);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[6] == 'x' && BlocksOfGame[7] == 'x' && BlocksOfGame[8] == 'x') {
+else if (BlocksOfGame[6] == BlocksOfGame[7] && BlocksOfGame[7] == BlocksOfGame[8]) {
 ctx.beginPath();
 ctx.moveTo(15, 580);
 ctx.lineTo(675, 580);
@@ -166,17 +148,7 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[6] == 'o' && BlocksOfGame[7] == 'o' && BlocksOfGame[8] == 'o') {
-ctx.beginPath();
-ctx.moveTo(15, 580);
-ctx.lineTo(675, 580);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-else if (BlocksOfGame[0] == 'x' && BlocksOfGame[3] == 'x' && BlocksOfGame[6] == 'x') {
+else if (BlocksOfGame[0] == BlocksOfGame[3] && BlocksOfGame[3] == BlocksOfGame[6]) {
 ctx.beginPath();
 ctx.moveTo(115, 15);
 ctx.lineTo(115, 675);
@@ -186,17 +158,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[0] == 'o' && BlocksOfGame[3] == 'o' && BlocksOfGame[6] == 'o') {
-ctx.beginPath();
-ctx.moveTo(115, 15);
-ctx.lineTo(115, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[1] == 'x' && BlocksOfGame[4] == 'x' && BlocksOfGame[7] == 'x') {
+else if (BlocksOfGame[1] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[7]) {
 ctx.beginPath();
 ctx.moveTo(350, 15);
 ctx.lineTo(350, 675);
@@ -206,17 +169,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[1] == 'o' && BlocksOfGame[4] == 'o' && BlocksOfGame[7] == 'o') {
-ctx.beginPath();
-ctx.moveTo(350, 15);
-ctx.lineTo(350, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[2] == 'x' && BlocksOfGame[5] == 'x' && BlocksOfGame[8] == 'x') {
+else if (BlocksOfGame[2] == BlocksOfGame[5] && BlocksOfGame[5] == BlocksOfGame[8]) {
 ctx.beginPath();
 ctx.moveTo(580, 15);
 ctx.lineTo(580, 675);
@@ -226,17 +180,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[2] == 'o' && BlocksOfGame[5] == 'o' && BlocksOfGame[8] == 'o') {
-ctx.beginPath();
-ctx.moveTo(580, 15);
-ctx.lineTo(580, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[0] == 'x' && BlocksOfGame[4] == 'x' && BlocksOfGame[8] == 'x') {
+else if (BlocksOfGame[0] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[8]) {
 ctx.beginPath();
 ctx.moveTo(15, 15);
 ctx.lineTo(675, 675);
@@ -246,27 +191,8 @@ ctx.lineCap = 'round';
 ctx.stroke();
 }
 
-else if (BlocksOfGame[0] == 'o' && BlocksOfGame[4] == 'o' && BlocksOfGame[8] == 'o') {
-ctx.beginPath();
-ctx.moveTo(15, 15);
-ctx.lineTo(675, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
 
-else if (BlocksOfGame[2] == 'x' && BlocksOfGame[4] == 'x' && BlocksOfGame[6] == 'x') {
-ctx.beginPath();
-ctx.moveTo(15, 675);
-ctx.lineTo(675, 15);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-else if (BlocksOfGame[2] == 'o' && BlocksOfGame[4] == 'o' && BlocksOfGame[6] == 'o') {
+else if (BlocksOfGame[2] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[6]) {
 ctx.beginPath();
 ctx.moveTo(15, 675);
 ctx.lineTo(675, 15);

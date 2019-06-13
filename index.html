@@ -113,93 +113,16 @@ drawX(x, y);
  
 }
  
-
+CheckForWinner()
 BlocksOfGame[block] = lastMove;
 
-if (BlocksOfGame[0] == BlocksOfGame[1] && BlocksOfGame[1] == BlocksOfGame[2]) {
-ctx.beginPath();
-ctx.moveTo(15, 115);
-ctx.lineTo(675, 115);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
+function CheckForWinner(a, b, c){
+if (BlocksOfGame[a] == BlocksOfGame[b] && BlocksOfGame[b] == BlocksOfGame[c]){
+alert('winner is: '+ BlocksOfGame[a]);
+return true;
+}else{
+return false;
 }
-
-
-else if (BlocksOfGame[3] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[5]) {
-ctx.beginPath();
-ctx.moveTo(15, 350);
-ctx.lineTo(675, 350);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-
-else if (BlocksOfGame[6] == BlocksOfGame[7] && BlocksOfGame[7] == BlocksOfGame[8]) {
-ctx.beginPath();
-ctx.moveTo(15, 580);
-ctx.lineTo(675, 580);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-else if (BlocksOfGame[0] == BlocksOfGame[3] && BlocksOfGame[3] == BlocksOfGame[6]) {
-ctx.beginPath();
-ctx.moveTo(115, 15);
-ctx.lineTo(115, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-
-else if (BlocksOfGame[1] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[7]) {
-ctx.beginPath();
-ctx.moveTo(350, 15);
-ctx.lineTo(350, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-
-else if (BlocksOfGame[2] == BlocksOfGame[5] && BlocksOfGame[5] == BlocksOfGame[8]) {
-ctx.beginPath();
-ctx.moveTo(580, 15);
-ctx.lineTo(580, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-
-else if (BlocksOfGame[0] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[8]) {
-ctx.beginPath();
-ctx.moveTo(15, 15);
-ctx.lineTo(675, 675);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
-}
-
-
-else if (BlocksOfGame[2] == BlocksOfGame[4] && BlocksOfGame[4] == BlocksOfGame[6]) {
-ctx.beginPath();
-ctx.moveTo(15, 675);
-ctx.lineTo(675, 15);
-ctx.lineWidth = 25;
-ctx.strokeStyle = 'red';
-ctx.lineCap = 'round';
-ctx.stroke();
 }
 
 }

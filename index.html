@@ -145,8 +145,10 @@ ctx.moveTo(0, 460);
 ctx.lineTo(690, 460);
 ctx.stroke();
 
-
+function restart() {
+	document.location.href = '';
+}
 </script>
-<button onclick="onClick()">Start game</button>
+<button onclick="restart()">Start game</button>
 </body>
 </html>

@@ -127,6 +127,7 @@ CheckForWinner(2,4,6)
 function CheckForWinner(a, b, c){
 if (BlocksOfGame[a] == BlocksOfGame[b] && BlocksOfGame[b] == BlocksOfGame[c] && BlocksOfGame[a] != ''){
 alert('winner is: '+ BlocksOfGame[a]);
+document.location.href = '';
 }else{
 return false;
 }
